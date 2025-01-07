@@ -1,4 +1,285 @@
-:root{
-    
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;700&family=Press+Start+2P&display=swap");
+
+:root {
+  --font-principal: "Press Start 2P";
+  --font-secundaria: "IBM Plex Mono", monospace;
+  --color-principal: #5300c8;
+  --color-secundario: #03318c;
+  --color-fondo: #ffffff;
+  --color-card: #5d04d9;
+  --color-negro: #000000;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+h1 {
+  font-family: var(--font-principal);
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--color-principal);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem;
+  /* background-color: aqua; */
+}
+
+.main_container > section {
+  width: calc(100% / 2);
+}
+
+.products_container {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.form_container {
+  padding: 2rem 0;
+  margin: 0 auto;
+  max-width: 19rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-direction: column;
+}
+
+input {
+  font-family: var(--font-secundaria);
+  width: 100%;
+  height: 1.875rem;
+  padding: 1.25rem;
+  font-weight: 600;
+  border: 0.1875rem solid var(--color-secundario);
+  border-radius: 1.875rem;
+}
+
+input::placeholder {
+  color: var(--color-secundario);
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-secundaria);
+  font-weight: 700;
+  color: var(--color-secundario);
+  border-radius: 1rem;
+  height: 2.813rem;
+  min-width: 8.125rem;
+}
+
+/* #button {
+  border-radius: 15px;
+  height: 45px;
+  min-width: 130px;
+} */
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.button_container {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+}
+
+.button_submit {
+  background-color: var(--color-secundario);
+  color: var(--color-fondo);
+}
+
+.button_reset {
+  background-color: var(--color-fondo);
+  color: var(--color-secundario);
+}
+
+.footer_container {
+  background-color: var(--color-principal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0;
+  width: 100%;
+}
+
+.footer_container > p {
+  color: var(--color-fondo);
+  font-family: var(--font-secundaria);
+}
+
+/* Card */
+
+.card {
+  background-color: var(--color-card);
+  color: var(--color-fondo);
+  width: calc(100% / 3 - 1rem);
+  max-width: 18.75rem;
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  border: 0.125rem solid var(--color-negro);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: var(--font-secundaria);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Image */
+
+.img_container {
+  width: 100%;
+  height: 12.5rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.img_container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 0.313rem;
+}
+
+/* Info Card */
+
+.card_container--info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  margin-top: 0.313rem;
+  width: 100%;
+  font-weight: bold;
+}
+
+/* Price */
+
+.card_container--value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+}
+
+.card_container--value p {
+  margin: 0;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.delete_button {
+  position: absolute;
+  bottom: 0%;
+  left: 5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  /* z-index: 10;  */
+}
+
+.delete_button img {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.2s;
+  opacity: 1;
+}
+
+.delete_button:hover img {
+  transform: scale(1.2);
+}
+
+.form_container {
+  padding: 2rem 0;
+  margin: 0 auto;
+  max-width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-direction: column;
+}
+
+.delete_button {
+  background-color: transparent;
+  border: 0 none;
+}
+
+@media screen and (max-width: 768px) {
+  .main_container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main_container > section {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .form_container {
+    padding: 2rem;
+  }
+
+  .card {
+    width: calc(100% / 2 - 1rem);
+    margin-bottom: 151rem;
+  }
+
+  .button_container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  footer {
+    position: relative;
+  }
+
+  .footer_container > p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}

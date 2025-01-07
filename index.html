@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,7 @@
 
   <body>
     <header class="header">
-      <img src="assets/img/LogoAG.svg" alt="Logo Alura Geek" />
+      <img src="assets/img/LogoAG.svg" alt="Logo AluraGeek" />
     </header>
 
     <!-- Contenedor Productos -->
@@ -18,41 +18,44 @@
     <main class="main_container">
       <section>
         <h1>Mis Productos:</h1>
-        <div data-product class="products-container"></div>
+        <div class="products_container" data-product></div>
       </section>
 
       <!-- Contendor agregar prodcuto -->
 
       <section>
-
         <h1>Agregar Producto:</h1>
 
         <!-- Formulario -->
 
         <form class="form_container" data-form>
-            
           <input type="text" placeholder="nombre..." data-name />
           <input type="text" placeholder="precio..." data-price />
-          <input type="text" placeholder="imagen..." data-imagen />
-          <div>
-            <button type="submit" class="button-submit" id="button">
+          <input type="text" placeholder="imagen..." data-image />
+          <div class="button_container">
+            <button type="submit" class="button_submit" id="button">
               Enviar
             </button>
-            <button type="reset" class="button-reset" id="button">
+            <button type="reset" class="button_reset" id="button">
               Limpiar
             </button>
           </div>
-
         </form>
       </section>
     </main>
-  </body>
 
-  <footer class="footer">
-    <div>
-      <img src="assets/img/LogoAG.svg" alt="Logo Alura Geek" />
-    </div>
-    <p>Desarollado por Titop521</p>
-    <p>Alura Latam- 2024</p>
-  </footer>
+    <!-- footer -->
+
+    <footer class="footer_container">
+      <div>
+        <img src="assets/img/LogoAG.svg" alt="Logo Alura Geek" />
+      </div>
+      <p>Desarollado por Titop521</p>
+      <p>Alura Latam- 2024</p>
+    </footer>
+
+    <script type="module" src="js/controllers/index.js"></script>
+  </body>
 </html>
+
+

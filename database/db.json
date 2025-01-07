@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "name": "Doctor Strange",
+      "price": "55.000",
+      "image": "https://images-cdn.ubuy.co.in/64be0f8876e0083286718238-funko-vinyl-soda-marvel-what-if.jpg",
+      "id": 1
+    },
+    {
+      "name": "Harry Potter",
+      "price": "25.000",
+      "image": "https://images-cdn.ubuy.co.in/66cb05491a3eb476561bdf56-funko-harry-potter-bobble-head-pop-n.jpg",
+      "id": 2
+    },
+    {
+      "name": "Groot",
+      "price": "35.000",
+      "image": "https://images-cdn.ubuy.co.in/66c3aa29594ca83f152d7253-funko-pop-marvel-guardians-of-the.jpg",
+      "id": 3
+    },
+    {
+      "name": "Iron Man",
+      "price": "45.000",
+      "image": "https://images-cdn.ubuy.co.in/6600eb77ff98464f3e3874d8-funko-pop-marvel-avengers-game-iron.jpg",
+      "id": 4
+    },
+    {
+      "name": "Spider Man",
+      "price": "46.000",
+      "image": "https://images-cdn.ubuy.co.in/668cec56d8327100893af5c3-funko-pop-marvel-spider-man-no-way.jpg",
+      "id": 5
+    },
+    {
+      "name": "Nick Fury",
+      "price": "42.000",
+      "image": "https://images-cdn.ubuy.co.in/677c831bb1fe1c206b5cc331-funko-pop-vinyl-the-marvels-nick.jpg",
+      "id": 6
+    },
+    {
+      "name": "Capitán América",
+      "price": "50.000",
+      "image": "https://images-cdn.ubuy.co.in/671872483ba4fd7c8f146525-funko-pop-marvel-avengers-endgame.jpg",
+      "id": 7
+    },
+    {
+      "name": "Bucky Barnes",
+      "price": "38.000",
+      "image": "https://images-cdn.ubuy.co.in/634b45dfb0c17034683ed29a-pop-marvel-avengers-infinity-war.jpg",
+      "id": 8
+    },
+    {
+      "name": "Thanos",
+      "price": "45.000",
+      "image": "https://images-cdn.ubuy.co.in/6701370adbbe6c6def0f3f64-pop-thanos-funko-avengers-end-game.jpg",
+      "id": 9
+    },
+    {
+      "name": "Thor",
+      "price": "50.000",
+      "image": "https://images-cdn.ubuy.co.in/66a07aac5b306f6b3652ff93-funko-pop-marvel-avengers-game-thor.jpg",
+      "id": 10
+    }
+  ]
+}
