@@ -261,7 +261,7 @@ footer {
 
   .card {
     width: calc(100% / 2 - 1rem);
-    margin-bottom: 151rem;
+    margin-bottom: 1.51rem;
   }
 
   .button_container {
